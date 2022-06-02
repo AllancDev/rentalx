@@ -27,13 +27,14 @@ export class CreateUsers1654133078478 implements MigrationInterface {
                     {
                         name: "email",
                         type: "varchar",
+                        isUnique: true,
                     },
                     {
                         name: "driver_license",
                         type: "varchar",
                     },
                     {
-                        name: "isAdmin",
+                        name: "is_admin",
                         type: "boolean",
                         default: false,
                     },
@@ -51,4 +52,3 @@ export class CreateUsers1654133078478 implements MigrationInterface {
         await queryRunner.dropTable("users");
     }
 }
-

@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add tsyringe
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add bcrypt
 
 PATH: 
-  C:\programs\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\programs\cmder\vendor\conemu-maximus5;C:\programs\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\programs\cmder;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\flutter\bin;C:\Users\acerv\AppData\Local\Android\Sdk\platform-tools;C:\ProgramData\chocolatey\bin;C:\xampp\php;C:\composer;C:\Users\acerv\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\acerv\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\acerv\AppData\Local\Programs\Python\Python310\;C:\Users\acerv\AppData\Local\Microsoft\WindowsApps;C:\Users\acerv\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\acerv\.dotnet\tools;C:\Users\acerv\AppData\Roaming\Composer\vendor\bin;C:\Users\acerv\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\programs\cmder\vendor\bin
+  C:\Users\acerv\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\acerv\bin;C:\programs\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\programs\cmder\vendor\conemu-maximus5;C:\programs\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\programs\cmder;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\dotnet;C:\flutter\bin;C:\Users\acerv\AppData\Local\Android\Sdk\platform-tools;C:\ProgramData\chocolatey\bin;C:\xampp\php;C:\composer;C:\Users\acerv\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Users\acerv\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\acerv\AppData\Local\Programs\Python\Python310;C:\Users\acerv\AppData\Local\Microsoft\WindowsApps;C:\Users\acerv\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\acerv\.dotnet\tools;C:\Users\acerv\AppData\Roaming\Composer\vendor\bin;C:\Users\acerv\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\programs\cmder\vendor\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
 
 Yarn version: 
   1.22.18
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'c:\workspace\rocketseat\ignite\nodejs\module-02\rentalx\node_modules\.bin\ts-node-dev'
+  Error: EPERM: operation not permitted, unlink 'C:\workspace\rocketseat\ignite\nodejs\module-02\rentalx\node_modules\.bin\ts-node-dev'
 
 npm manifest: 
   {
@@ -33,6 +33,7 @@ npm manifest:
           "pg": "^8.7.3",
           "reflect-metadata": "^0.1.13",
           "swagger-ui-express": "^4.4.0",
+          "tsyringe": "^4.7.0",
           "typeorm": "0.2.45",
           "uuid": "^8.3.2"
       },
@@ -2343,7 +2344,7 @@ Lockfile:
       strip-bom "^3.0.0"
       strip-json-comments "^2.0.0"
   
-  tslib@^1.8.1:
+  tslib@^1.8.1, tslib@^1.9.3:
     version "1.14.1"
     resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
     integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
@@ -2359,6 +2360,13 @@ Lockfile:
     integrity sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==
     dependencies:
       tslib "^1.8.1"
+  
+  tsyringe@^4.7.0:
+    version "4.7.0"
+    resolved "https://registry.yarnpkg.com/tsyringe/-/tsyringe-4.7.0.tgz#aea0a9d565385deebb6def60cda342b15016f283"
+    integrity sha512-ncFDM1jTLsok4ejMvSW5jN1VGPQD48y2tfAR0pdptWRKYX4bkbqPt92k7KJ5RFJ1KV36JEs/+TMh7I6OUgj74g==
+    dependencies:
+      tslib "^1.9.3"
   
   type-check@^0.4.0, type-check@~0.4.0:
     version "0.4.0"
